@@ -1,0 +1,14 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="10dp" android:layout_marginHorizontal="20dp" style="?attr/materialCardViewElevatedStyle" app:cardElevation="20dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_margin="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageView" android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/round_shape" android:padding="10dp" android:src="@drawable/round_person" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+            <LinearLayout android:id="@+id/linear_content" android:layout_margin="10dp" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/imageView" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/button_delete" android:orientation="vertical">
+                <TextView android:id="@+id/textView_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" android:text="Guerra Rodgers"/>
+                <TextView android:id="@+id/textView_phone_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+919999955555"/>
+                <TextView android:id="@+id/textView_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="xyz@gmail.com"/>
+                <TextView android:id="@+id/textView_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="gitanjali-1, mehsana"/>
+            </LinearLayout>
+            <Button android:id="@+id/button_delete" android:gravity="center" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/linear_content" style="?attr/materialIconButtonFilledStyle" android:backgroundTint="#FD0069" app:icon="@drawable/delete"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
